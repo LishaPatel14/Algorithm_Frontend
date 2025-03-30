@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-arrow-up"></i></div>
+        <ul class="nav-links">
+            <li><a href="menu.html"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="homepage.html"><i class="fa-solid fa-house-laptop"></i></a></li>
+            <li><a href="coursecategories.html"><i class="fa-solid fa-graduation-cap"></i></a></li>
+            <li><a href="analysis.html"><i class="fa-solid fa-chart-simple"></i></a></li>
+            <li><a href="Relatedproblems.html"><i class="fa-solid fa-clock"></i></a></li>
+            <li><a href="setting.html"><i class="fa-solid fa-gear"></i></a></li>
+            
+        </ul>
+        <div class="nav-icons">
+            <button class="icon-button bell-button">b
+                <li><a href="bell.html"><i class="fa-solid fa-bell"></i></a></li>
+            </button>
+            <button class="icon-button profile-button">
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+            </button>
+        </div>        
+    </nav>
+
+    <div class="container">
+        <h2>Sign Up An Account</h2>
+        <p>Enter personal data to create your account</p>
+        <div class="social-buttons">
+            <button class="google-btn"><i class="fa-brands fa-google"></i> Google</button>
+            <button class="apple-btn"><i class="fa-brands fa-apple"></i> Apple</button>
+        </div>
+        <hr>
+        <form id="signupForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter email address" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+            
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            
+            <button type="submit" class="signup-btn"><i class="fa-solid fa-user-plus"></i> Sign up</button>
+        </form>
+        <p>Already have an account? <a href="#"><i class="fa-solid fa-sign-in-alt"></i> Log in</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

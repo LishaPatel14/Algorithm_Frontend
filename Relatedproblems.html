@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Related Problems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-arrow-up"></i></div>
+            <ul class="nav-links">
+                <li><a href="menu.html"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="homepage.html"><i class="fa-solid fa-house-laptop"></i></a></li>
+                <li><a href="coursecategories.html"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="analysis.html"><i class="fa-solid fa-chart-simple"></i></a></li>
+                <li><a href="Relatedproblems.html"><i class="fa-solid fa-clock"></i></a></li>
+                <li><a href="setting.html"><i class="fa-solid fa-gear"></i></a></li>
+            </ul>
+            <div class="nav-icons">
+                <span class="bell-icon"><i class="fa-solid fa-bell"></i></span>
+                <span class="profile-icon"><i class="fa-solid fa-user"></i></span>
+            </div>
+        </nav>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Related Problems</h2>
+            <ul>
+                <li>Array Sum Problems</li>
+                <li>Array Manipulation</li>
+                <li>Number Series</li>
+                <li>Positive Numbers</li>
+                <li>Mathematical Operations</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="content">
+            <div class="problem-card">
+                <h3>Array Sum Challenge <span class="status completed">Completed</span></h3>
+                <p>Find the sum of positive numbers in an array, ignoring negative values.</p>
+                <pre><code>def sum_positive(arr):
+    return sum(x for x in arr if x &gt; 0)
+
+print(sum_positive([1, -2, 3, 4, 5]))</code></pre>
+                <button class="solution-btn completed">View Solution</button>
+            </div>
+
+            <div class="problem-card">
+                <h3>Array Filter <span class="status pending">Pending</span></h3>
+                <p>Find out negative numbers from an array and return new array.</p>
+                <pre><code>def get_negatives(arr):
+    return [x for x in arr if x &lt; 0]
+
+print(get_negatives([1, -2, 3, -4, 5]))</code></pre>
+                <button class="solution-btn pending">Continue</button>
+            </div>
+
+            <div class="problem-card">
+                <h3>Maximum Value <span class="status completed">Completed</span></h3>
+                <p>Find maximum positive number in an array.</p>
+                <pre><code>def max_positive(arr):
+    return max(x for x in arr if x &gt; 0)
+
+print(max_positive([1, -2, 3, 4, 5]))</code></pre>
+                <button class="solution-btn completed">View Solution</button>
+            </div>
+
+            <div class="problem-card">
+                <h3>Array Transform <span class="status pending">Pending</span></h3>
+                <p>Transform array by squaring positive numbers.</p>
+                <pre><code>def square_positives(arr):
+    return [x**2 if x &gt; 0 else x for x in arr]
+
+print(square_positives([1, -2, 3, 4, 5]))</code></pre>
+                <button class="solution-btn pending">Continue</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

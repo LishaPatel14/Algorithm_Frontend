@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-arrow-up"></i></div>
+        <ul class="nav-links">
+            <li><a href="menu.html"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="homepage.html"><i class="fa-solid fa-house-laptop"></i></a></li>
+            <li><a href="coursecategories.html"><i class="fa-solid fa-graduation-cap"></i></a></li>
+            <li><a href="analysis.html" class="active"><i class="fa-solid fa-chart-simple"></i></a></li>
+            <li><a href="Relatedproblems.html"><i class="fa-solid fa-clock"></i></a></li>
+            <li><a href="setting.html"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="bell-icon"><i class="fa-solid fa-bell"></i></span>
+            <span class="profile-icon"><i class="fa-solid fa-user"></i></span>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <h1>Problem Solved</h1>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <h2>85%</h2>
+                <p>Completion Rate</p>
+            </div>
+            
+            <div class="stat-card">
+                <h2>12.5 hrs/week</h2>
+                <p>Time Spent</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>Activity Heatmap</h3>
+            <div class="heatmap">
+                <div class="heatmap-day">Mon</div>
+                <div class="heatmap-day active">Tue</div>
+                <div class="heatmap-day active">Wed</div>
+                <div class="heatmap-day">Thu</div>
+                <div class="heatmap-day">Fri</div>
+                <div class="heatmap-day">Sat</div>
+                <div class="heatmap-day">Sun</div>
+            </div>
+            <p class="heatmap-label">Mon-Wed Peak Days</p>
+        </div>
+        
+        <div class="section">
+            <h3>Progress Trend</h3>
+            <canvas id="progressChart"></canvas>
+            <p class="trend-label">+27% vs Last Month</p>
+        </div>
+        
+        <div class="section">
+            <h3>Detailed Analytics</h3>
+            <table class="analytics-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Problems Solved</th>
+                        <th>Time Spent</th>
+                        <th>Accuracy</th>
+                        <th>This Week</th>
+                        <th>This Month</th>
+                        <th>All Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-03-15</td>
+                        <td>15</td>
+                        <td>2.5 hrs</td>
+                        <td>90%</td>
+                        <td></td>
+                        <td><span class="status good">Good</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-14</td>
+                        <td>12</td>
+                        <td>2.0 hrs</td>
+                        <td>85%</td>
+                        <td></td>
+                        <td><span class="status good">Good</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-13</td>
+                        <td>8</td>
+                        <td>1.5 hrs</td>
+                        <td>78%</td>
+                        <td></td>
+                        <td><span class="status average">Average</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-12</td>
+                        <td>10</td>
+                        <td>2.2 hrs</td>
+                        <td>88%</td>
+                        <td></td>
+                        <td><span class="status good">Good</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-11</td>
+                        <td>14</td>
+                        <td>3.0 hrs</td>
+                        <td>95%</td>
+                        <td></td>
+                        <td><span class="status excellent">Excellent</span></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

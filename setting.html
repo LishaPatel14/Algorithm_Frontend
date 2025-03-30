@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-arrow-up"></i></div>
+        <ul class="nav-links">
+            <li><a href="menu.html"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="homepage.html"><i class="fa-solid fa-house-laptop"></i></a></li>
+            <li><a href="coursecategories.html"><i class="fa-solid fa-graduation-cap"></i></a></li>
+            <li><a href="analysis.html"><i class="fa-solid fa-chart-simple"></i></a></li>
+            <li><a href="Relatedproblems.html"><i class="fa-solid fa-clock"></i></a></li>
+            <li><a href="setting.html"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="bell-icon"><i class="fa-solid fa-bell"></i></span>
+            <span class="profile-icon"><i class="fa-solid fa-user"></i></span>
+        </div>
+    </nav>
+
+    <div class="settings-container">
+        <h2>Account Settings</h2>
+        <div class="account-settings">
+            <div class="setting-item">
+                <h3>Profile Information</h3>
+                <p>Update your account's profile information</p>
+                <button class="edit-btn">Edit</button>
+            </div>
+            <div class="setting-item">
+                <h3>Password</h3>
+                <p>Change your account password</p>
+                <button class="update-btn">Update</button>
+            </div>
+            <div class="setting-item">
+                <h3>Two Factor Authentication</h3>
+                <p>Add additional security to your account</p>
+                <button class="enable-btn">Enable</button>
+            </div>
+        </div>
+
+        <h2>Preferences</h2>
+        <div class="preferences">
+            <div class="preference-item">
+                <h3>Language</h3>
+                <p>Select your preferred language</p>
+                <button class="language-btn">English</button>
+            </div>
+            <div class="preference-item">
+                <h3>Theme</h3>
+                <p>Choose your interface color scheme</p>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="preference-item">
+                <h3>Email Notification</h3>
+                <p>Manage your email notification preferences</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <h2>Danger Zone</h2>
+        <div class="danger-zone">
+            <div class="danger-item">
+                <h3>Delete account</h3>
+                <p>Permanently delete your account and all data</p>
+                <button class="delete-btn">Delete Account</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
